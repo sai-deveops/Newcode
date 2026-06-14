@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bus Ticket Booking</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: auto;
+        background: #fff;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+        text-align: center;
+        color: #333;
+    }
+
+    label {
+        font-weight: bold;
+        display: block;
+        margin-top: 12px;
+    }
+
+    input, select {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .btn {
+        width: 100%;
+        background: #28a745;
+        color: white;
+        border: none;
+        padding: 12px;
+        margin-top: 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .btn:hover {
+        background: #218838;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>🚌 Bus Ticket Booking</h2>
+
+    <form>
+        <label>Passenger Name</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Mobile Number</label>
+        <input type="tel" placeholder="Enter mobile number" required>
+
+        <label>From</label>
+        <select required>
+            <option value="">Select Source</option>
+            <option>Hyderabad</option>
+            <option>Vijayawada</option>
+            <option>Visakhapatnam</option>
+            <option>Bangalore</option>
+        </select>
+
+        <label>To</label>
+        <select required>
+            <option value="">Select Destination</option>
+            <option>Hyderabad</option>
+            <option>Vijayawada</option>
+            <option>Visakhapatnam</option>
+            <option>Bangalore</option>
+        </select>
+
+        <label>Journey Date</label>
+        <input type="date" required>
+
+        <label>Number of Seats</label>
+        <select required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+
+        <label>Bus Type</label>
+        <select required>
+            <option>AC Sleeper</option>
+            <option>AC Seater</option>
+            <option>Non-AC Sleeper</option>
+            <option>Non-AC Seater</option>
+        </select>
+
+        <button type="submit" class="btn">Book Ticket</button>
+    </form>
+</div>
+
+</body>
+</html>
